@@ -6,7 +6,6 @@ import bcrypt
 
 def realuser(username):
     f = "/etc/openvpn/server/auth/" + username + ".password"
-    print(f)
     if os.path.isfile(f):
         return True
     return False
