@@ -30,7 +30,7 @@ if [ -f "$PKI/private/$CLIENT.key" ]; then
     exit 1
 fi
 
-EASYRSA_VARS_FILE=/etc/easy-rsa/vars
+export EASYRSA_VARS_FILE=/etc/easy-rsa/vars
 cd $PKI/..
 
 echo "Generating request for '$CLIENT'"
